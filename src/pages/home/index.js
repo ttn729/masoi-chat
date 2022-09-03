@@ -21,16 +21,11 @@ const Home = ({ username, setUsername, room, setRoom, socket }) => {
           onChange={(e) => setUsername(e.target.value)}
         ></input>
 
-        <select
+        <input
           className={styles.input}
+          placeholder="Room Code"
           onChange={(e) => setRoom(e.target.value)}
-        >
-          <option>-- Choose Room --</option>
-          <option value="nhat">Nhật</option>
-          <option value="spicy">Spicy</option>
-          <option value="edric">Edric</option>
-          <option value="tun">Tủn</option>
-        </select>
+        ></input>
 
         <button
           className="btn btn-secondary"
